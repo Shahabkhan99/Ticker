@@ -7,23 +7,23 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/ticker.css" />
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+   	<script src="includes/jquery.ticker.js" type="text/javascript"></script>
 
   </head>
   <body>
-
     <div class="container">
       <div class="ticker">
         <div class="title"><h5>Breaking News</h5></div>
         <div class="news">
-          <marquee>    
-	      <header></header><section></section> 
+        <marquee behavior=scroll direction="left" scrollamount="5" onmouseover="stop()" onmouseout="start()">
+	      <header></header><section></section>
     <section>
     <div class="row">
     <script>
     const header = document.querySelector('header');
     const section = document.querySelector('section');
 
-    let requestURL = 'https://raw.githubusercontent.com/Shahabkhan99/json/master/news1.json';  
+    let requestURL = 'https://raw.githubusercontent.com/Shahabkhan99/json/master/news1.json';
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -35,15 +35,25 @@
       showNews(News);
     }
 
-    function populateHeader(jsonObj) {
+    function populateHeader(jsonObj)  {
 
       const myPara = document.createElement('p');
-      myPara.textContent = 'Breaking News: ' + jsonObj['News1'] + ' || Breaking News: ' + jsonObj['News2'] + ' || Breaking News: ' + jsonObj['News3']  + ' || Breaking News: ' + jsonObj['News4'] + ' || Breaking News: ' + jsonObj['News5'] + ' || Breaking News: ' + jsonObj['News6'] + ' || Breaking News: ' + jsonObj['News7'] + ' || Breaking News: ' + jsonObj['News8'] + ' || Breaking News: ' + jsonObj['News9'] + ' || Breaking News: ' + jsonObj['News10'] + ' || Breaking News: ' + jsonObj['News11'] ;
+      myPara.textContent =
+      ' 🇬🇧 Breaking News: ' + jsonObj['News1'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News2'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News3'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News4'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News5'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News6'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News7'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News8'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News9'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News10'] +
+      ' 🇬🇧 Breaking News: ' + jsonObj['News11'] ;
       header.appendChild(myPara);
     }
-
-             </script>
-  	    </div>
+           </script>
+           </div>
     	  </marquee>
         </div>
       </div>
