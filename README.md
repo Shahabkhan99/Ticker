@@ -1,2 +1,2 @@
 # Ticker
-html ticker bar
+html ticker bar with json support to update
