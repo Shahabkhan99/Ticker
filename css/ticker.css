@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background: #3e3232;
+    font-family: 'Poppins', sans-sherif;
+    display: flex;
+    flex-wrap: baseline;
+    color: #fff;
+    overflow: hidden;
+    width: 1000px;
+    height: 10px;
+    margin: 5px 0px;
+}
+
+.title {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    background: #c81c1c;
+    position: relative;
+}
+
+.title h5 {
+    font-size: 12px;
+    margin: 5px 0px;
+}
+
+.ticker {
+    display: flex;
+    flex-wrap: baseline;
+    margin: 0px 0px;
+    width: 135%;
+} 
+
+.news {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: #cc4444;
+    position: relative;
+
+} 
+
+.news marquee {
+    font-size: 12px;
+    margin: -6px 0px;
+}
